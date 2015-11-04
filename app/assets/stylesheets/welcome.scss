@@ -1,0 +1,43 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$break-small: 375px;
+
+html {
+  background-color: #fff;
+  color: #666;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  margin: 0;
+  padding: 5em 1em;
+  text-align: center;
+}
+
+p {
+  font-size: 2em;
+}
+
+.button-link {
+  color: #fff;
+  cursor: pointer;
+  background-color: #09c;
+  border: 1px solid #999;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0.2em 0.25em 0.2em 0.2em;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: 1px;
+
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+ 
+  @media screen and (min-device-width : 375px) 
+                and (max-device-width : 667px) {
+    display: block;
+  }
+  
+  &:hover {
+    background-color: #1ad;
+  }
+}
