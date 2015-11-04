@@ -7,6 +7,8 @@ Only the landing page has been built yet.
 
 Contact paul@brief.io, follow along at [@GetBrief](https://twitter.com/getbrief), and join the [Slack team](http://slack.brief.io/).
 
+[![Slack Status](https://slack.brief.io/badge.svg)](https://slack.brief.io)
+
 OPEN STARTUP
 ============
 
