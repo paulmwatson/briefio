@@ -5,7 +5,9 @@ This is the website for [Brief.io](http://brief.io), a daily email digest for [S
 
 Only the landing page has been built yet.
 
-Contact paul@brief.io and follow along at [@GetBrief](https://twitter.com/getbrief).
+Contact paul@brief.io, follow along at [@GetBrief](https://twitter.com/getbrief), and join the [Slack team](http://slack.brief.io/).
+
+[![Slack Status](http://slack.brief.io/badge.svg)](http://slack.brief.io)
 
 OPEN STARTUP
 ============
