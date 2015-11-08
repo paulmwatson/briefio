@@ -1,0 +1,13 @@
+<%= image_tag 'mail_header.png', class: 'mail_header' %>
+<p class="intro">Over the past 24 hours <em>412 links</em> have been shared across <em>25 channels</em> in <em>5 Slack teams</em>. Here are the <em>10</em> most important links.</p>
+<ul class="links">
+  <%- Link.all.each do |link| -%>
+  <li class="link">
+    <%= link_to image_tag(link.thumbnail_url, alt: link.title, class: 'thumbnail', target: 'blank') %>
+    <h1 class="title"><%= link_to link.title, link.url %></h1>
+    <h2 class="provider_display"><%= link.provider_display %></h2>
+    <p class="description"><%= truncate link.description, length: 255, seperator: ' ' %></p>
+  </li>
+  <%- end -%>
+</ul>
+<p class="ending">View <a href="#">more links...</a></p>
