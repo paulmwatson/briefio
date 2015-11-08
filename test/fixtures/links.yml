@@ -1,0 +1,36 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+blockchainhackathon:
+  title: "Dublin blockchain hackathon"
+  thumbnail_url: "https://blockchain-hackathon.com/assets/img/BCHblocksmith2.png"
+  description: "You have heard of \"the\" or \"a\" blockchain before. You might or might not have played around it already, it doesn't really matter here. By the end of the hackathon you will have built something new, disruptive, maybe a game-changer. This hackathon is open to every idea, commercial or not, and every blockchain, Bitcoin and others."
+  url: "https://blockchain-hackathon.com"
+  provider_display: "blockchain-hackathon.com"
+
+watsiblog1:
+  title: "Announcing our $3.5M Philanthropic Growth Round"
+  thumbnail_url: "http://blog.watsi.org/content/images/2015/11/watsi-91.jpg"
+  description: "Two years ago, we raised a seed round of donations to support our operations with one goal - to prove the Watsi concept. We built our dream team and started traveling to hospitals around the world to learn how Watsi..."
+  url: "http://blog.watsi.org/growth-round/"
+  provider_display: "watsi.org"
+
+pureuiblog: 
+  title: "Pure UI"
+  thumbnail_url: "https://cldup.com/JDDxCgEoBj.png"
+  description: "I recently redesigned and implemented a new version of VideoPress, the WordPress video platform. The process involved, among other things, creating a new UI, ditching the dependency on Flash in favor of HTML5 and introducing new functionality. The particular way in which I implemented it led me to some interesting insights around the growing convergence of the designer and programmer roles."
+  url: "http://rauchg.com/2015/pure-ui/"
+  provider_display: "rauchg.com"
+
+brigade:
+  title: "Brigade"
+  thumbnail_url: "https://www.brigade.com/assets/branded_generic_open_graph_image_1200px-b656a410c78170f015fe6c16e05c0072.png"
+  description: "Brigade is a new way to find allies on the issues you care about most."
+  url: "https://brigade.com"
+  provider_display: "brigade.com"
+
+startupweekendstudent:
+  title: "Startup Weekend Dublin: Student Edition"
+  thumbnail_url: "https://cdn.evbuc.com/images/15740596/153743137919/1/logo.jpg"
+  description: "Startup Weekends are intense 54-hour events designed to let new technical and non-technical entrepreneurs launch a startup in a single weekend. Beginning with Friday night pitches and continuing through brainstorming, business plan development, and basic prototype creation, Startup Weekends culminate in Sunday night demos and presentations."
+  url: "https://www.eventbrite.com/e/startup-weekend-dublin-student-edition-tickets-18788953265"  
+  provider_display: "eventbrite.com"

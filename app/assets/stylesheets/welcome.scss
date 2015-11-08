@@ -1,26 +1,57 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$break-small: 375px;
+$break-small: 320px;
+$break-large: 767px;
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   background-color: #fff;
-  color: #666;
+  color: #000;
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  margin: 0;
-  padding: 5em 1em;
-  text-align: center;
 }
 
-p {
+.mockup_preview {
+  background: transparent image-url('iphone6_black.png') no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 667px;
+  margin: 25px auto;
+  width: 327px;
+
+  iframe {
+    height: 506px;
+    margin-left: 21px;
+    margin-top: 81px;
+    width: 285px;
+  }
+}
+
+p.cta {
+  color: #666;
   font-size: 2em;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  @media screen and (min-device-width : $break-small) 
+                and (max-device-width : $break-large) {
+    background-color: rgba(255, 255, 255, 0.1);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .button-link {
   color: #fff;
   cursor: pointer;
-  background-color: #09c;
-  border: 1px solid #999;
+  background-color: #c06;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   display: inline-block;
   margin: 0.2em 0.25em 0.2em 0.2em;
@@ -32,12 +63,82 @@ p {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
  
-  @media screen and (min-device-width : 375px) 
-                and (max-device-width : 667px) {
+  @media screen and (min-device-width : $break-small) 
+                and (max-device-width : $break-large) {
     display: block;
   }
   
   &:hover {
-    background-color: #1ad;
+    background-color: #118bff;
   }
+}
+
+.mail_header {
+  display: block;
+  width: 100%;
+}
+
+.action_mockup {
+  font-size: 0.5em;
+}
+
+.intro, .ending {
+  background-color: #eee;
+  border-bottom: solid 1px #b2b2b2;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em;
+
+  em {
+    color: #093;
+  }
+}
+
+ul.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .link {
+    border-top: solid 1px #f9f9f9;
+    border-bottom: solid 1px #b2b2b2;
+    overflow: hidden;
+    padding: 0.5em 0.75em 1em 0.75em;
+
+    .title {
+      font-size: 1.5em;
+      margin: 0;
+
+      a {
+        color: #007aff;
+        text-decoration: none;
+      }
+    }
+
+    .provider_display {
+      color: #666;
+      font-size: 0.1em;
+      margin: 0;
+    }
+
+    .description {
+      margin: 0;
+    }
+
+    .thumbnail {
+      float: right;
+      margin-left: 0.5em;
+      width: 75px;
+    }
+  }
+}
+
+.bg {
+  background-color: #fff;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(130, 200, 24, 0.10), rgba(24, 130, 200, 0.66), rgba(24, 130, 200, 1));
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }

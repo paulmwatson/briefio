@@ -6,4 +6,9 @@ class WelcomeControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get mockup" do
+    get :mockup
+    assert_response :success
+  end
+
 end
