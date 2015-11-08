@@ -12,6 +12,6 @@
   <body>
     <%= render partial: 'layouts/google_analytics' if ENV['GOOGLE_ANALYTICS_UA'] %>
     <%= yield %>
-    <%= render partial: 'layouts/intercom' if ENV['INTERCOM_APP_ID'] %>
+    <%= render partial: 'layouts/intercom' if ENV['INTERCOM_APP_ID'] && controller.action_name != 'mockup' %>
   </body>
 </html>
